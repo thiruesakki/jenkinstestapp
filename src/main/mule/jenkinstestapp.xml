@@ -9,6 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="jenkinstestappFlow" doc:id="d78303f6-9994-4b0e-907a-e8108c04282f" >
 		<http:listener doc:name="Listener" doc:id="ab6635a9-fdd3-4e6a-8cf1-aeb64738d034" config-ref="HTTP_Listener_config" path="/jenkinsTest"/>
-		<set-payload value='{"Status":"Success","message":"Sucessfully depolyed"}' doc:name="Set Payload" doc:id="474a1f3c-80f5-4f4e-aa10-1dd2a40ad5cc" />
+		<set-payload value='{"Status":"Success","message":"Sucessfully build and deploy"}' doc:name="Set Payload" doc:id="474a1f3c-80f5-4f4e-aa10-1dd2a40ad5cc" />
 	</flow>
 </mule>
